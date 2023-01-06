@@ -1,6 +1,6 @@
 [Link to problem](https://codeforces.com/contest/1186/problem/C)
 
-## Notes
+**Notes**
 
 We have two binary strings `a` and `b` (see the problem for details).
 
@@ -14,11 +14,9 @@ Finaly we iterate over all substrings of length of `b` in string `a`, which take
 
 So the whole thing takes `O(n)` time!
 
-## Section for dummies (myself included)
+**Section for dummies (myself included)**
 
-Why `% 2`? This is how this problem is explained in blog entry with solutions to the contest from which this problem was taken (https://codeforces.com/blog/entry/68027).
-
-The solution states that `It's easy to see that 𝑓(𝑐,𝑑) is even if and only if 𝑐𝑛𝑡𝑏 and 𝑐𝑛𝑡𝑐 have same parity. In other words if 𝑐𝑛𝑡𝑐 % 2 ≡ 𝑐𝑛𝑡𝑑 % 2 then 𝑓(𝑐,𝑑) is even.`
+Why `% 2`? This is how this problem is explained in blog entry with solutions to the contest from which this problem was taken (https://codeforces.com/blog/entry/68027). The solution states that `It's easy to see that 𝑓(𝑐,𝑑) is even if and only if 𝑐𝑛𝑡𝑏 and 𝑐𝑛𝑡𝑐 have same parity. In other words if 𝑐𝑛𝑡𝑐 % 2 ≡ 𝑐𝑛𝑡𝑑 % 2 then 𝑓(𝑐,𝑑) is even.`
 
 _f(c, d) is a function introduced in the problem description. It is basically number of distinct bits between string `c` and `d` (substring of `a` and `b`)._
 
@@ -48,7 +46,7 @@ f(c, d) = 0
 
 Now _drum roll please_ when we add 1 to an even number we get an odd one!
 
-_drum roll please_ again ... when we add 2 to an odd number we get an odd number, and when we add 2 to an even number we get an even number!
+_Drum roll please_ again ... when we add 2 to an odd number we get an odd number, and when we add 2 to an even number we get an even number!
 
 So as long as length of string c and d is the same or it is different by an even number we will get an even output from f(c, d). Reason for that is when we add one `1` bit to c or d, then number of ones will change it's parity resulting in switching parity of our result (we will have one more match or we will have one more distinct bit which will change our result by one and switching it's parity)
 
