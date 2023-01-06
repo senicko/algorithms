@@ -53,3 +53,7 @@ _drum roll please_ again ... when we add 2 to an odd number we get an odd number
 So as long as length of string c and d is the same or it is different by an even number we will get an even output from f(c, d). Reason for that is when we add one `1` bit to c or d, then number of ones will change it's parity resulting in switching parity of our result (we will have one more match or we will have one more distinct bit which will change our result by one and switching it's parity)
 
 I know this may be overexplained if you are smart, but in my opinion it is important to spend some time on understanding details, connecting dots and making something that seems legit into a fact we understand as it can help to solve other problems.
+
+---
+
+prefix_sum
