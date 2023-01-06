@@ -20,4 +20,8 @@ So we need to consider only the first row and column. In case of `w = 2` and `h 
 
 So `4 * 2 * 2 * 1 = 2 * 2 * 2 * 2 = 2 ^ 4 = 2 ^ (2 + 2)`.
 
-Now we can compute that in O(log(n)) time thanks to binary exponentation.
+Now we can compute that in O(log(n)) time thanks to binary exponentiation.
+
+---
+
+binary_exponentiation combinatorics
