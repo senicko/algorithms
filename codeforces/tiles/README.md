@@ -2,7 +2,7 @@
 
 **Notes**
 
-Single tile can be rotated in four ways. When we add tile to it's side it can be rotated on two ways (to have different colors on side).
+Single tile can be rotated in four ways. When we add tile to it's side it can be rotated in two ways (to have different colors on side).
 
 We need to notice that when tile is glued to two other tiles there is only one way we can face it.
 
