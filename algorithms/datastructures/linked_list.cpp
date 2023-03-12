@@ -27,7 +27,7 @@ public:
   Node<T> *last() { return tail; }
   Node<T> *first() { return head; }
 
-  // Prints values stored inside the linkedlist.
+  /// Prints values stored inside the linkedlist.
   void print() {
     Node<T> *current = head;
 
@@ -41,8 +41,8 @@ public:
     std::cout << "]\n";
   }
 
-  // Adds a new node to the front of the linked list.
-  // time complexity - O(1)
+  /// Adds a new node to the front of the linked list.
+  /// time complexity - O(1)
   void push_front(T value) {
     Node<T> *created = new Node<T>(value);
     created->next = head;
@@ -54,8 +54,8 @@ public:
     _size++;
   }
 
-  // Adds a new node to the back of the linked list.
-  // time complexity - O(1)
+  /// Adds a new node to the back of the linked list.
+  /// time complexity - O(1)
   void push_back(T value) {
     Node<T> *created = new Node<T>(value);
 
@@ -68,7 +68,7 @@ public:
     _size++;
   }
 
-  // Removes first element from the linked list.
+  /// Removes first element from the linked list.
   void remove_first() {
     if (is_empty())
       return;
@@ -84,7 +84,7 @@ public:
 };
 
 int main() {
-  LinkedList<int> *list = new LinkedList<int>();
+  LinkedList<int> *list = new LinkedList<int>;
 
   list->push_front(10);
   list->print();
